@@ -1,5 +1,5 @@
 {
-  "name": "my-angularpoc-gitactions",
+  "name": "gh-second-git-action",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:my-angularpoc-gitactions": "node dist/my-angularpoc-gitactions/server/server.mjs"
+    "serve:ssr:gh-second-git-action": "node dist/gh-second-git-action/server/server.mjs"
   },
   "private": true,
   "dependencies": {
