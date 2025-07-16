@@ -19,7 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3                  
+        uses: actions/checkout@v3
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Build Angular app
+        run: ng build
+        
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
