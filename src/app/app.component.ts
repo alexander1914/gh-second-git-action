@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Integration a Angular project with GitActions tests';
+  title = 'Integration a Angular project with Git Actions tests';
 }
