@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm build",
+    "build": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:gh-second-git-action": "node dist/gh-second-git-action/server/server.mjs"
