@@ -24,12 +24,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-
-      - name: Install Angular CLI
-        run: npm install -g @angular/cli
-
-      - name: Build Angular app
-        run: ng build
         
       - name: Install NodeJS
         uses: actions/setup-node@v3
@@ -37,6 +31,13 @@ jobs:
           node-version: 18.19.0      
       - name: Build project
         run: npm run build
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+      
+      - name: Build Angular app
+        run: ng build
+      
       - name: Deploy
         run:  echo "Starting my deploy now..."                 
 
