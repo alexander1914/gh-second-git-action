@@ -1,4 +1,4 @@
-name: Angular CI
+name: Angular to build with Git Actions
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       - name: Lint
         run: npx ng lint || true # Linting is optional; remove "|| true" to fail on lint errors
 
-      - name: Build Angular app
+      - name: Build Angular App
         run: npm run build
 
       #- name: Run tests
