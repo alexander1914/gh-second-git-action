@@ -10,4 +10,4 @@ jobs:
           run: echo "Testing a output ...."
 
         - name: Output GitHub context
-          run: echo '${{ toJSON(github) }}'
+          run: echo '${{ toJson(github) }}'
