@@ -6,5 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+        - name: Output Message 
+          run: echo "Testing a output ...."
+
         - name: Output GitHub context
-          run: echo "${{ toJson(github) }} Testing a output ...."
+          run: echo "${{ toJSON(github) }}"
